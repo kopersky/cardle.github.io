@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <img src="Graphics/logo.png" alt="Cardle Logo" class="logo">
+        <p>Zgadnij samochód w naszej wciągającej grze!</p>
+        
+        <div class="buttons-container">
+            <a href="Classic/classic.html" class="nav-button">Classic</a>
+            <a href="Photo/Photo.html" class="nav-button">Photo</a>
+            <a href="Logo/Logo.html" class="nav-button">Logo</a>
+            <a id="credits" class="nav-button">Credits</a>
+        </div>
+        
+        <div class="footer">
+            &copy; 2025 Cardle
+        </div>
+    </div>
+</body>
+<script>
+    const cred = document.getElementById('credits')
+
+    let isExpanded = false
+
+    cred.addEventListener('click', function(){
+        if (isExpanded) {
+            cred.style.height = '49.59px'
+            cred.style.transition = 'all 0.3s'
+            cred.textContent = 'Credits'
+            isExpanded = false
+        } else {
+            cred.style.height = '125px'
+            cred.style.transition = 'all 0.3s'
+            cred.innerHTML = 'Credits <br> Dziamski Bartosz <br> Jamry Bartosz <br> Kopka Igor';
+            isExpanded = true
+        }
+    });
+</script>
+</html>
