@@ -1,9 +1,9 @@
 <?php
 header('Content-type: application/json');
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cardle";
+$servername = "sql109.infinityfree.com";
+$username = "if0_39043535";
+$password = "Cardle123 ";
+$dbname = "if0_39043535_cardle";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
